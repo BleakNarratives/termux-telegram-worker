@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/data/data/com.termux/files/usr/bin/bash
 set -eu
 pkg update -y
-pkg install -y python
+pkg install -y python git
 python -m pip install --user -r requirements.txt
-printf '\nInstalled. Set TG_TOKEN and OLLAMA_MODEL, then run: ./run.sh\n'
+printf '\nInstalled dependencies. Run ./run.sh after exporting TG_TOKEN, TG_WEBHOOK_SECRET, and OLLAMA_MODEL.\n'
